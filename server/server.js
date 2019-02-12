@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 require('./config/config');
 
 
@@ -24,14 +23,6 @@ app.use((req, res, next) => {
 });
 
 app.use(Routes);
-
-
-mongoose.connect(process.env.URLDB, (err, res) => {
-    if (err) throw err;
-
-    console.log("Database online");
-});
-
 
 
 app.listen(process.env.PORT, (res, req) => {
