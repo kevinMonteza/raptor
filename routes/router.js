@@ -10,10 +10,6 @@ const con = mysql.createConnection({
     user: 'wooprodequacom',
     password: 'tFQDwvnx',
     database: 'woo_prodequa_com'
-    // host: "mysql.aimtalent.prodequa.com",
-    // user:'aimtalent',
-    // password:"prodequa",
-    // database:"aimtalentdemo"
   });
   
 con.connect();
@@ -24,4 +20,4 @@ router.get('/woo', function(req,res){
       });
 })
 
-module.exports = router;   
+module.exports = router; 
